@@ -10,27 +10,27 @@ export const getTimeAgo = (date: number) => {
 
   if (weeks > 0) {
     return {
-      value: weeks,
+      value: Math.abs(weeks),
       unit: "week",
     }
   }
 
   if (days > 0) {
     return {
-      value: days,
+      value: Math.abs(days),
       unit: "day",
     }
   }
 
   if (hours > 0) {
     return {
-      value: hours,
+      value: Math.abs(hours),
       unit: "hour",
     }
   }
 
   return {
-    value: minutes,
+    value: Math.abs(minutes),
     unit: "minute",
   }
 }
