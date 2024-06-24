@@ -99,14 +99,6 @@ public class PostService {
         return new UserPostDetailsDTO(postRepository.save(post));
     }
 
-    public UserPostDetailsDTO updatePostPrivate(String id) {
-        var post = getPost(id);
-
-        post.setPrivatePost(!post.getPrivatePost());
-
-        return new UserPostDetailsDTO(postRepository.save(post));
-    }
-
     public UserPostDetailsDTO likePost(String id) {
         var post = getPost(id);
 

@@ -7,12 +7,10 @@ import java.time.ZoneOffset;
 
 public record PostDetailsDTO(
         String id,
-        String title,
         String description,
         String photoLink,
         String videoLink,
         Integer likes,
-        Boolean privatePost,
         String userId,
         String username,
         String userPhotoLink,
@@ -21,12 +19,10 @@ public record PostDetailsDTO(
     public PostDetailsDTO(Post post) {
         this(
                 post.getId(),
-                post.getTitle(),
                 post.getDescription(),
                 post.getPhotoLink(),
                 post.getVideoLink(),
                 post.getLikes(),
-                post.getPrivatePost(),
                 post.getUser().getId(),
                 post.getUser().getActualUsername(),
                 post.getUser().getPhoto(),

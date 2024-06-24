@@ -32,12 +32,6 @@ public class Post {
 
     private LocalDateTime updatedAt = LocalDateTime.now(ZoneId.of(VAR.OFFSET));
 
-    @Column(name = "private")
-    private Boolean privatePost = false;
-
-    @Size(max = 50)
-    private String title;
-
     @Size(max = 200)
     private String description;
 
@@ -53,7 +47,6 @@ public class Post {
     private User user;
 
     public Post(CreatePostRequestDTO dto, User user) {
-        this.title = dto.title();
         this.description = dto.description();
         this.photoLink = dto.photoLink();
         this.videoLink = dto.videoLink();
@@ -61,10 +54,6 @@ public class Post {
     }
 
     public void update(UpdatePostRequestDTO dto) {
-        if (dto.title() != null) {
-            this.title = dto.title();
-        }
-
         if (dto.description() != null) {
             this.description = dto.description();
         }

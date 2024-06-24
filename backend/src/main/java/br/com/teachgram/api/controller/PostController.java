@@ -39,12 +39,6 @@ public class PostController {
         return ResponseEntity.ok().body(postService.updatePost(id, dto));
     }
 
-    @PutMapping("/{id}" + ROUTE.PRIVATE)
-    @Transactional
-    public ResponseEntity<UserPostDetailsDTO> updatePostPrivate(@PathVariable String id) {
-        return ResponseEntity.ok().body(postService.updatePostPrivate(id));
-    }
-
     @DeleteMapping("/{id}")
     public ResponseEntity<DeletePostResponseDTO> deletePost(@PathVariable String id) {
         return ResponseEntity.ok().body(postService.deletePost(id));
