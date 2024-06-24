@@ -31,7 +31,6 @@ public class PostSeeder {
 
             var post1 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post da julia",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -41,7 +40,6 @@ public class PostSeeder {
 
             var post2 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post do matheus",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -51,7 +49,6 @@ public class PostSeeder {
 
             var post3 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post da maria",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -61,7 +58,6 @@ public class PostSeeder {
 
             var post4 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post do joao",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/5968894/pexels-photo-5968894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -71,7 +67,6 @@ public class PostSeeder {
 
             var post5 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post da julia2",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/551851/pexels-photo-551851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -81,7 +76,6 @@ public class PostSeeder {
 
             var post6 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post da julia3",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -91,7 +85,6 @@ public class PostSeeder {
 
             var post7 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post do matheus2",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -101,7 +94,6 @@ public class PostSeeder {
 
             var post8 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post da maria2",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -111,7 +103,6 @@ public class PostSeeder {
 
             var post9 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post do joao2",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/5968894/pexels-photo-5968894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
@@ -121,7 +112,6 @@ public class PostSeeder {
 
             var post10 = postRepository.save(new Post(
                     new CreatePostRequestDTO(
-                            "Post da julia4",
                             "Look at this beautiful view",
                             "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                             ""
